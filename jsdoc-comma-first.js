@@ -15,10 +15,10 @@ exports.handlers = {
 				if(prev && prev.indexOf('*/') > -1) {
 					if(linecopy.indexOf(',') === 0) {
 						commentsBuffer.splice(0,0,',');
-						line = line.replace(',','');
+						line = line.replace(',',' ');
 					}
 					commentsBuffer.push(line);
-					newSource += commentsBuffer.join('\n');
+					newSource += commentsBuffer.join('\n') + '\n';
 					commentsBuffer = [];
 					
 				}
@@ -30,6 +30,7 @@ exports.handlers = {
 				newSource += line+'\n';
 			}
 		});
+		newSource = newSource.replace(/\n,/g,',');
         e.source = newSource;
     }
 };
