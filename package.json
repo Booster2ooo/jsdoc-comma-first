@@ -1,0 +1,19 @@
+{
+  "name": "jsdoc-comma-first",
+  "version": "1.0.0",
+  "description": "This JSDoc3 plugin offers support for \"comma first\" style (commas n front of variables/object properties). ",
+  "main": "comma-first.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Booster2ooo/jsdoc-comma-first/"
+  },
+  "keywords": [
+    "jsdoc",
+    "comma"
+  ],
+  "author": "Booster2ooo",
+  "license": "ISC"
+}
